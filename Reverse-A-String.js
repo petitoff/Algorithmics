@@ -7,6 +7,7 @@ function reverse1(str){
     const totalItems = str.length -1 ;
     for(let i =totalItems; i >= 0; i--){
         backwards.push(str[i]);
+        console.log(i)
     }
 
     return backwards.join('');
@@ -16,4 +17,6 @@ function reverse2(str){
     return str.split('').reverse().join('')
 }
 
-console.log(reverse2('Hi My name is Błażej'))
+const reverse3 = str => str.split('').reverse().join('');
+
+console.log(reverse1('Hi My name is Błażej'))
