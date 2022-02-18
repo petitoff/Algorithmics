@@ -18,3 +18,6 @@ Overflow of hash tables
  O(n/k)
  O(n)
 */
+
+const a = new Map();
+const b = new Set();
