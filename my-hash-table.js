@@ -18,7 +18,7 @@ class HashTable {
     }
     this.data[address].push([key, value]);
     return this.data;
-  }
+  } // O(1)
 
   get(key) {
     let address = this._hash(key);
@@ -31,9 +31,9 @@ class HashTable {
           return currentBucket[i][1];
         }
       }
-    }
+    } // O(1) or O(n)
     return undefined;
-  }
+  } 
 }
   
 const myHashTable = new HashTable(2);
