@@ -10,7 +10,7 @@ You can return the answer in any order.
 */
 
 const twoSum = function (nums, target) {
-  const indices = new Map(); // I create map
+  const indices = new Map();
 
   for (let index = 0; index < nums.length; index++) {
     const complement = target - nums[index];
