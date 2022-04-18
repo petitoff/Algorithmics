@@ -1,7 +1,7 @@
 # Algorithmics
 A repository for my algorithm science. It contains various information on algorithmic problems and how to solve them.
 
-</br> The incomplete knowledge he has is stored here. I have external notes on algorithms that are not included here so my knowledge may be more than that contained in this repository.
+The incomplete knowledge he has is stored here. I have external notes on algorithms that are not included here so my knowledge may be more than that contained in this repository.
 In addition, I have a separate [codewars](https://github.com/petitoff/codewars) repository where my algorithms that I developed to solve kata tasks are contained.
 
 # Precise description
