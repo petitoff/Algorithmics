@@ -16,7 +16,7 @@ const lengthOfLongestSubstring = function (s) {
     const stringSlice = s.slice(p, q);
     const checkIfExists = stringSlice.indexOf(s[q]);
     if (checkIfExists !== -1) {
-      p = p + checkIfExists + 1;
+      p += checkIfExists + 1;
     }
     q++;
     result = q - p > result ? q - p : result;
