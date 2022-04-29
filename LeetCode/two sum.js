@@ -12,12 +12,12 @@ You can return the answer in any order.
 const twoSum = function (nums, target) {
   const indices = new Map();
 
-  for (let index = 0; index < nums.length; index++) {
-    const complement = target - nums[index];
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
 
-    if (indices.has(complement)) return [indices.get(complement), index];
+    if (indices.has(complement)) return [indices.get(complement), i];
 
-    indices.set(nums[index], index);
+    indices.set(nums[i], i);
   }
 };
 
