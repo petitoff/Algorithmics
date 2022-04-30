@@ -19,7 +19,7 @@ const isMatch = function (s, p) {
     }
 
     memo[key] = false;
-    return false;
+    return memo[key];
   };
 
   return dfs(0, 0);
