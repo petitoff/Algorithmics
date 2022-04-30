@@ -12,7 +12,7 @@ const gridTraveler = (m, n) => {
 
 const gridTravelerMemo = (m, n, memo = {}) => {
   // are the args in the memo
-  const key = m + "," + n;
+  const key = m + ',' + n;
   if (key in memo) return memo[key];
 
   if (m === 1 && n === 1) return 1;
