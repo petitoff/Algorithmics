@@ -5,23 +5,23 @@ Given an integer array nums sorted in non-decreasing order, return an array of t
 */
 
 var sortedSquares = function(nums) {
-    const result = new Array(nums.length).fill(0);
+    const result = new Array(nums.length);
     let left = 0;
     let right = nums.length - 1;
     let resultIndex = right;
 
     while(left <= right){
-    	let leftVal = Math.pow(nums[left], 2);
-    	let rightVal = Math.pow(nums[right], 2);
+        const leftValue = Math.pow(nums[left], 2);
+        const rightValue = Math.pow(nums[right], 2);
 
-    	if(leftVal < rightVal){
-    		result[resultIndex] = rightVal;
-    		right--;
-    	} else{
-    		result[resultIndex] = leftVal;
-    		left++;
-    	}
-		resultIndex--;
+        if(leftValue < rightValue){
+            result[resultIndex] = rightValue;
+            right--;
+        } else{
+            result[resultIndex] = leftValue;
+            left++;
+        }
+        resultIndex--;
     }
 
     return result;
