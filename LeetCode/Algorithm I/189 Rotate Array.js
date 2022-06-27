@@ -4,7 +4,7 @@ Description:
 Given an array, rotate the array to the right by k steps, where k is non-negative.
 */
 
-const revNums = function(nums, start, end){
+const reverseNums = (nums, start, end) =>{
 	while(start < end){
 		[nums[start], nums[end]] = [nums[end], nums[start]];
 		start++;
@@ -13,15 +13,14 @@ const revNums = function(nums, start, end){
 }
 
 const rotate = function(nums, k) {
-    k = k % nums.length;
-    nums.reverse();
+	k = k % nums.length; // check if k is not greater that nums.length
+	nums.reverse();
 
-    revNums(nums, 0, k-1);
-    revNums(nums, k, nums.length-1);
-
-    console.log(cos);
+	reverseNums(nums, 0, k - 1);
+	reverseNums(nums, k, nums.length - 1);
 
     return nums;
 };
 
 console.log(rotate([1,2,3,4,5,6,7], 3));
+
